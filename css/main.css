@@ -18,23 +18,53 @@ nav{
     width: 80%;
     margin: auto;
 }
-/* .menu-nav{
-    width: 80%;
-    margin: auto;
-    border: solid 1px black;
-    display:inline-block;
-    position: absolute;
+.menu-nav{
+    background-color: purple;
+    width: 50%;
+    display: inline-block;
+}
+.menu-nav2{
+    background-color: black;
+    position:absolute;
+    display: inline-block;
+    right: 0;
+    width: 40%;
+    text-align: center;
+    line-height: 40px;
 }
 
-.menu-nav li{
+
+.menu-nav li, .menu-nav2 li{
     display: inline-block;
     margin-right: 10px;
 }
-.menu-nav li a{
+.menu-nav li a, .menu-nav2 li a{
     text-decoration: none;
     color: white;
-    margin-right: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+}
+/* .menu-nav li, .menu-nav2 li:last-child {
+    margin-right: 0;
 } */
+
+#logo{
+    margin-right: 40px;
+}
+.vertical-middle{
+    vertical-align: middle;
+}
+.menu-nav2 li a{
+    /* padding: 10%; */
+    left: 0;
+}
+.title{
+    background-color: green;
+    height: 100px;
+    width: 40%;
+    margin-left:10%;
+    margin-top: 10%;
+}
 
 /* #menu-nav li:first-child{
     margin-right: 50px;
@@ -43,34 +73,11 @@ nav{
     margin-right: 40px;
 
 }
+*/
 
-#menu-nav li:last-child {
-    margin-right: 0;
-}
- */
 
-.menu-nav{
-    background-color: purple;
-    height: 100px;
-    width: 50%;
-    display: inline-block;
-}
-.menu-nav2{
-    background-color: black;
-    height: 100px;
-    position:absolute;
-    display: inline-block;
-    right: 0;
-    width: 40%;
-}
 
-.title{
-    background-color: green;
-    height: 100px;
-    width: 40%;
-    margin-left:10%;
-    margin-top: 10%;
-}
+
 
 
 #image-header{
