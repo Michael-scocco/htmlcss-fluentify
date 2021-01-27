@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+}
+
+header{
+    background-color: blue;
+    position: relative;
+
+    /* debug */
+    height: 600px;
+}
+nav{
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+/* .menu-nav{
+    width: 80%;
+    margin: auto;
+    border: solid 1px black;
+    display:inline-block;
+    position: absolute;
+}
+
+.menu-nav li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.menu-nav li a{
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+} */
+
+/* #menu-nav li:first-child{
+    margin-right: 50px;
+}
+#menu-nav li:nth-child(5){
+    margin-right: 40px;
+
+}
+
+#menu-nav li:last-child {
+    margin-right: 0;
+}
+ */
+
+.menu-nav{
+    background-color: purple;
+    height: 100px;
+    width: 50%;
+    display: inline-block;
+}
+.menu-nav2{
+    background-color: black;
+    height: 100px;
+    position:absolute;
+    display: inline-block;
+    right: 0;
+    width: 40%;
+}
+
+.title{
+    background-color: green;
+    height: 100px;
+    width: 40%;
+    margin-left:10%;
+    margin-top: 10%;
+}
+
+
+#image-header{
+    /* background-color: red; */
+
+
+    /* debug */
+    height: 100px;
+
+
+    /* background-image: url(../img/background-header.png);
+    /* background-position: center; */
+    /* width: 50%;
+    height: 50%;
+    background-size: cover; */
+}
+
+
+
+/* regola per selezionare i figli */
+
+/* p:nth-child(2) {
+  background: red;
+} */
+
+
+
+/* regole per non selezionare i figli */
+
+/* :not(p) {
+  background: #ff0000;
+} */
+
+
+/* regola dell'ultimo filgio */
+
+/*p:last-child {
+  background: #ff0000;
+} */
