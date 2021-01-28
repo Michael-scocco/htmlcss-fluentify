@@ -5,35 +5,36 @@
 }
 body{
 }
-
+/* regole intestazione */
 header{
     background-color: blue;
-    position: relative;
 
     /* debug */
     height: 600px;
 }
+/* regole nav */
 nav{
     position: relative;
-    width: 80%;
+    width: 60%;
     margin: auto;
 }
+/* creo due menu nav */
 .menu-nav{
-    background-color: purple;
-    width: 50%;
+    background-color: blue;
+    width: 70%;
     display: inline-block;
 }
 .menu-nav2{
-    background-color: black;
+    background-color: blue;
     position:absolute;
     display: inline-block;
     right: 0;
-    width: 40%;
+    width: 30%;
     text-align: center;
     line-height: 40px;
 }
-
-
+/*cerco di impostare all'ultimo figlio che deve essere a zero margine del div
+ non funziona */
 .menu-nav li, .menu-nav2 li{
     display: inline-block;
     margin-right: 10px;
@@ -44,9 +45,15 @@ nav{
     padding-right: 15px;
     font-size: 12px;
 }
-/* .menu-nav li, .menu-nav2 li:last-child {
-    margin-right: 0;
-} */
+
+/* .menu-nav li:last-child ,  */
+.menu-nav2 li:last-child {
+    position: absolute;
+    margin-right: 0px;
+}
+.menu-nav2 li a:first-child{
+    left:0;
+}
 
 #logo{
     margin-right: 40px;
@@ -54,49 +61,80 @@ nav{
 .vertical-middle{
     vertical-align: middle;
 }
-.menu-nav2 li a{
-    /* padding: 10%; */
-    left: 0;
-}
-.title{
-    background-color: green;
-    height: 100px;
-    width: 40%;
-    margin-left:10%;
-    margin-top: 10%;
-}
-
-/* #menu-nav li:first-child{
-    margin-right: 50px;
-}
-#menu-nav li:nth-child(5){
-    margin-right: 40px;
-
-}
-*/
-
-
-
-
-
 
 #image-header{
-    /* background-color: red; */
-
-
-    /* debug */
-    height: 100px;
-
-
-    /* background-image: url(../img/background-header.png);
-    /* background-position: center; */
-    /* width: 50%;
-    height: 50%;
-    background-size: cover; */
+    background-image: url(../img/background-header.png);
+    background-position:50% 50%;
+    background-size: 1000px;
+    background-repeat: no-repeat;
 }
 
+.title{
+    width: 30%;
+    margin-left:20%;
+    margin-top: 150px;
+    color: white;
+}
 
+h1{
+    margin-bottom:30px;
+    font-size: 50px;
+}
 
+.link{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 150;
+}
+/* finito header */
+
+/* inizio prima sezione */
+.title-2{
+    background-color: red;
+    height: 100px;
+}
+
+.row{
+    background-color: green;
+    min-height: 200px;
+    border: solid 1px black;
+    margin:auto;
+    width: 60%;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.lightblue{
+    background-color: gray;
+    min-height: 200px;
+    border: solid 1px black;
+}
+
+.aside{
+    float: left;
+    width: 30%;
+    margin:20px 0;
+    min-height: 250px;
+}
+.centre{
+    float: left;
+    width: 30%;
+    margin:20px 5%;
+    min-height: 250px;
+
+}
+.photo-centering{
+    height: 130px;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+}
 /* regola per selezionare i figli */
 
 /* p:nth-child(2) {
