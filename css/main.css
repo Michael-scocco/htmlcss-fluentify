@@ -1,157 +1,269 @@
+
+
+/* ______REGOLE GENERALI_______ */
+
 *{
-    margin: 0;
+    margin:0;
     padding:0;
     box-sizing: border-box;
 }
+
 body{
-}
-/* regole intestazione */
-header{
-    background-color: blue;
 
-    /* debug */
-    height: 600px;
-}
-/* regole nav */
-nav{
-    position: relative;
-    width: 60%;
-    margin: auto;
-}
-/* creo due menu nav */
-.menu-nav{
-    background-color: blue;
-    width: 70%;
-    display: inline-block;
-}
-.menu-nav2{
-    background-color: blue;
-    position:absolute;
-    display: inline-block;
-    right: 0;
-    width: 30%;
-    text-align: center;
-    line-height: 40px;
-}
-/*cerco di impostare all'ultimo figlio che deve essere a zero margine del div
- non funziona */
-.menu-nav li, .menu-nav2 li{
-    display: inline-block;
-    margin-right: 10px;
-}
-.menu-nav li a, .menu-nav2 li a{
-    text-decoration: none;
-    color: white;
-    padding-right: 15px;
-    font-size: 12px;
 }
 
-/* .menu-nav li:last-child ,  */
-.menu-nav2 li:last-child {
-    position: absolute;
-    margin-right: 0px;
+p{
+    color:#808080;
 }
-.menu-nav2 li a:first-child{
-    left:0;
-}
+/* ______________INSERISCO IL JUMBOTRON___________ */
 
-#logo{
-    margin-right: 40px;
-}
-.vertical-middle{
-    vertical-align: middle;
-}
-
-#image-header{
+header#jumbotron{
+    min-height: 900px;
     background-image: url(../img/background-header.png);
-    background-position:50% 50%;
-    background-size: 1000px;
     background-repeat: no-repeat;
+    background-size:61% 50%;
+    background-position: 110%;
+    position: relative;
+    background-color: #173257;
 }
 
-.title{
-    width: 30%;
-    margin-left:20%;
-    margin-top: 150px;
-    color: white;
+/* ____________CREO IL CONTAINER PER CENTRALIZZARE________ */
+#container{
+    width: 80%;
+    margin: 0 auto;
 }
 
-h1{
-    margin-bottom:30px;
-    font-size: 50px;
-}
+/* _________CREO IL NAV MENU, DOVE LO VADO A FLOTTARE_________ */
 
-.link{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 150;
-}
-/* finito header */
 
-/* inizio prima sezione */
-.title-2{
-    background-color: red;
-    height: 100px;
-}
-
-.row{
-    background-color: green;
-    min-height: 200px;
-    border: solid 1px black;
-    margin:auto;
-    width: 60%;
-}
-
-.row::after{
+.clear-fix::after{              /*________CREO IL MIO CLEAR-FIX_________*/
     content: "";
     display: table;
     clear: both;
 }
-.lightblue{
-    background-color: gray;
-    min-height: 200px;
-    border: solid 1px black;
-}
 
-.aside{
+div.menu-left{
+    min-width: 30%;
+    min-height: 100px;
     float: left;
-    width: 30%;
-    margin:20px 0;
-    min-height: 250px;
 }
-.centre{
+
+div.menu-right{
+    min-width: 30%;
+    min-height: 100px;
+    float: right;
+}
+
+/* _________CREO I LINK E CERCO DI CENTRARLI CON IL LINE-HEIGHT_________ */
+
+ul.link-menu li{
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 25px;
+    line-height: 100px;
+}
+
+a.menu-into{
+    padding-right: 30px;
+    line-height: 100px;
+}
+
+.white{
+    color:white;
+}
+
+/* _____________CREO LE CLASSI BUTTOM___________ */
+.buttom{
+    line-height: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.buttom-white{
+    border: 1px solid white;
+    padding: 10px 30px;
+}
+
+.buttom-green{
+    background-color: green;
+    padding: 10px 15px;
+}
+
+.buttom-green-2{
+    background-color: green;
+    padding: 25px 25px;
+}
+
+.title{
+    position: absolute;
+    top: 30%;
+    width: 40%;
+}
+div.title >h1{
+    padding-bottom: 50px;
+    font-size: 51px;
+}
+
+/* ______REGOLE DIVISION_____ */
+
+div.division{
+    position: absolute;
+    height: 240px;
+    background-color: #d3d3d3;
+    width: 100%;
+    text-align: center;
+    bottom:0;
+}
+
+div.title-2{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.title-2 h2{
+    font-size:30px;
+}
+div.title-2 p{
+    font-size:23px;
+}
+
+/* __________INIZIO LA PRIMA SESSIONE_________ */
+
+
+/* ________REGOLE CARD_______ */
+div.card{
+    min-height: 300px;
+    width: calc(calc(100% - 5%) /3);
+    margin-right: 2.5%;
     float: left;
-    width: 30%;
-    margin:20px 5%;
-    min-height: 250px;
+    text-align: center;
+    padding: 44px 36px;
+}
+
+div.card:last-child{
+    margin-right: 0;
+}
+/* _________REGOLE LINEA DI BORDO DIVISORIA________ */
+
+.border{
+    border: 1px solid #aaaaaa;
+    width: 20%;
+    margin: 30px 40%;
+}
+/* _________REGOLE TESTO CARD_________ */
+
+div.card H2{
+    color: #8ab838;
+    font-size: 30px;
+}
+div.card p{
+    font-size: 21px;
+    line-height: 1.4em;
+}
+
+/* ________REGOLE IMMAGINI________ */
+
+div.card img{
+    height: 180px;
+    padding-bottom:30px;
+}
+
+/* _________REGOLE SECONDA SESSIONE________ */
+
+/* _________REGOLE IMMAGINE________ */
+
+
+div.image{
+    width: 50%;
+    float: left;
+    padding: 75px;
+}
+div.image img{
+    height: 500px;
+}
+
+/* _________REGOLE TITOLO_________ */
+
+div.title-3{
+    width: 40%;
+    float:left;
+    padding-top: 75px;
+    padding-right: 100px;
 
 }
-.photo-centering{
-    height: 130px;
-    object-fit: cover;
-    margin: 20px auto;
-    display: block;
+
+div.title-3 h2{
+    font-size: 40px;
+    padding-bottom: 15px;
 }
-/* regola per selezionare i figli */
 
-/* p:nth-child(2) {
-  background: red;
-} */
+div.title-3 p{
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+
+div.title-3 > a{
+    color:#5282b7;
+    font-size: 18px;
+}
+
+.write-gray{
+    color:#7f7f7f;
+}
 
 
+/* __________REGOLE FOOTER________ */
 
-/* regole per non selezionare i figli */
+footer{
+    background-color: #d3d3d3;
+}
 
-/* :not(p) {
-  background: #ff0000;
-} */
+.row{
+    min-height: 100px;
+    padding: 58px 0;
+}
 
 
-/* regola dell'ultimo filgio */
+div.title-footer{
+    line-height: 100px;
+    float: left;
+    width: 23%;
+}
 
-/*p:last-child {
-  background: #ff0000;
-} */
+div.footer-right{
+    float: right;
+    line-height: 100px;
+}
+
+div.title-footer .h2-footer{
+    font-size: 40px;
+}
+
+span{
+    font-size: 18px;
+}
+
+.select{
+    border: none;
+    border-bottom: 1px solid #7f7f7f;
+    padding-right: 55px;
+    font-size: 18px;
+    margin: 0 20px;
+}
+
+/* ______REGOLE POSITION_______ */
+
+.chat-fixed{
+    position: fixed;
+    bottom: 16px;
+    left: 1432px;
+    z-index: 100px;
+}
+
+.buttom-green-3{
+    background-color: green;
+    padding: 15px 15px;
+}
